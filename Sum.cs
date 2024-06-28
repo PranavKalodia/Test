@@ -19,7 +19,7 @@ class Program
         int number2 = int.Parse(input2);
 
         // Calculate the sum of the two numbers
-        int sum = number1 + number2;
+        int sum = number1 - number2;
 
         // Output the result
         Console.WriteLine("The sum of {0} and {1} is {2}.", number1, number2, sum);
