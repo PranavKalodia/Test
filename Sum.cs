@@ -6,28 +6,32 @@ class Program
     {
         // Prompt the user to enter the first number
         Console.Write("Enter the first number: ");
-        string input1 = Console.ReadLine();
+        string firstNumberInput = Console.ReadLine();
         
         // Convert the input to an integer
-        int number1 = int.Parse(input1);
+        int firstNumber;
+        if (!int.TryParse(firstNumberInput, out firstNumber))
+        {
+            Console.WriteLine("Invalid input. Please enter a number.");
+            return;
+        }
 
         // Prompt the user to enter the second number
         Console.Write("Enter the second number: ");
-        string input2 = Console.ReadLine();
+        string secondNumberInput = Console.ReadLine();
         
         // Convert the input to an integer
-        int number2 = int.Parse(input2);
+        int secondNumber;
+        if (!int.TryParse(secondNumberInput, out secondNumber))
+        {
+            Console.WriteLine("Invalid input. Please enter a number.");
+            return;
+        }
 
         // Calculate the sum of the two numbers
-        int sum = number1 - number2;
+        int sum = firstNumber - secondNumber;
 
         // Output the result
-        Console.WriteLine("The sum of {0} and {1} is {2}.", number1, number2, sum);
+        Console.WriteLine("The sum of {0} and {1} is {2}.", firstNumber, secondNumber, sum);
     }
 }
-
-# Reviewed by LLM model
-
-# Reviewed by LLM model
-
-# Reviewed by Pranav 
