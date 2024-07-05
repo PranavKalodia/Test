@@ -1,1 +1,37 @@
-dXNpbmcgU3lzdGVtOwoKY2xhc3MgUHJvZ3JhbQp7CiAgICBzdGF0aWMgdm9pZCBNYWluKHN0cmluZ1tdIGFyZ3MpCiAgICB7CiAgICAgICAgaW50IGZpcnN0TnVtYmVyID0gR2V0TnVtYmVyKFwiRW50ZXIgdGhlIGZpcnN0IG51bWJlcjogXCIpOwogICAgICAgIGludCBzZWNvbmROdW1iZXIgPSBHZXROdW1iZXIoXCJFbnRlciB0aGUgc2Vjb25kIG51bWJlcjogXCIpOwoKICAgICAgICAvLyBDYWxjdWxhdGUgdGhlIHN1bSBvZiB0aGUgdHdvIG51bWJlcnMKICAgICAgICBpbnQgc3VtID0gZmlyc3ROdW1iZXIgKyBzZWNvbmROdW1iZXI7CgogICAgICAgIC8vIE91dHB1dCB0aGUgcmVzdWx0CiAgICAgICAgQ29uc29sZS5Xcml0ZUxpbmUoXCJUaGUgc3VtIG9mIHswfSBhbmQgezF9IGlzIHsyfS5cIiwgZmlyc3ROdW1iZXIsIHNlY29uZE51bWJlciwgc3VtKTsKICAgIH0KCiAgICBzdGF0aWMgaW50IEdldE51bWJlcihzdHJpbmcgcHJvbXB0KQogICAgewogICAgICAgIGludCBudW1iZXI7CiAgICAgICAgc3RyaW5nIGlucHV0OwogICAgICAgIGRvCiAgICAgICAgewogICAgICAgICAgICBDb25zb2xlLldyaXRlKHByb21wdCk7CiAgICAgICAgICAgIGlucHV0ID0gQ29uc29sZS5SZWFkTGluZSgpOwogICAgICAgIH0gd2hpbGUgKCFpbnQuVHJ5UGFyc2UoaW5wdXQsIG91dCBudW1iZXIpKTsKCiAgICAgICAgcmV0dXJuIG51bWJlcjsKICAgIH0KfQo=
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Prompt the user to enter the first number
+        Console.Write("Enter the first number: ");
+        string firstNumberInput = Console.ReadLine();
+        
+        // Convert the input to an integer
+        int firstNumber;
+        if (!int.TryParse(firstNumberInput, out firstNumber))
+        {
+            Console.WriteLine("Invalid input. Please enter a number.");
+            return;
+        }
+
+        // Prompt the user to enter the second number
+        Console.Write("Enter the second number: ");
+        string secondNumberInput = Console.ReadLine();
+        
+        // Convert the input to an integer
+        int secondNumber;
+        if (!int.TryParse(secondNumberInput, out secondNumber))
+        {
+            Console.WriteLine("Invalid input. Please enter a number.");
+            return;
+        }
+
+        // Calculate the sum of the two numbers
+        int sum = firstNumber - secondNumber;
+
+        // Output the result
+        Console.WriteLine("The sum of {0} and {1} is {2}.", firstNumber, secondNumber, sum);
+    }
+}
