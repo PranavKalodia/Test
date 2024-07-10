@@ -6,11 +6,11 @@ class Program
     {
         try 
         {
-            // Prompt the user to enter the first number
+          
             Console.Write("Enter the first number: ");
             string firstNumberInput = Console.ReadLine();
         
-            // Convert the input to an integer
+            
             int firstNumber;
             if (!int.TryParse(firstNumberInput, out firstNumber))
             {
@@ -18,11 +18,11 @@ class Program
                 return;
             }
 
-            // Prompt the user to enter the second number
+            
             Console.Write("Enter the second number: ");
             string secondNumberInput = Console.ReadLine();
         
-            // Convert the input to an integer
+            
             int secondNumber;
             if (!int.TryParse(secondNumberInput, out secondNumber))
             {
@@ -30,10 +30,10 @@ class Program
                 return;
             }
 
-            // The user wants the system or another person to perform an addition operation on two given numbers.In a program
+           
             int sum = firstNumber - secondNumber;
 
-            // Output the result
+            
             Console.WriteLine("The sum of {0} and {1} is {2}.", firstNumber, secondNumber, sum);
         }
         catch (Exception ex)
