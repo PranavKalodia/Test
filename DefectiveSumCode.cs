@@ -30,7 +30,7 @@ class Program
                 return;
             }
 
-            // Calculate the sum of the two numbers
+            // The user wants the system or another person to perform an addition operation on two given numbers.In a program
             int sum = firstNumber - secondNumber;
 
             // Output the result
