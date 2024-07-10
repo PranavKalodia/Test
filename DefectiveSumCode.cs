@@ -32,7 +32,7 @@ class Program
             }
 
            
-            int sum = firstNumber + secondNumber;
+            int sum = firstNumber - secondNumber;
 
             
             Console.WriteLine("The sum of {0} and {1} is {2}.", firstNumber, secondNumber, sum);
